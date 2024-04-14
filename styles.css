@@ -11,7 +11,7 @@ header {
   width: 431px;
 }
 h1 {
-  background: url("/assets/img/img.png") 0% 340px;
+  background: url("assets/img/img.png") 0% 340px;
   padding: 1.2rem 0;
   margin: 0;
 }
