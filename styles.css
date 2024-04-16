@@ -21,3 +21,43 @@ h1 {
   padding: 8px 6px;
   background: #5EE270;
 }
+.con-text{
+  background-color: white;
+  font-family: system-ui;
+  text-align: left;
+  padding: 0 30px;
+}
+
+.h1text{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.h2text{
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.h3text{
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.h4text{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.h5text{
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.h6text{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.pratext{
+  font-size: 16px;
+}
