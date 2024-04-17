@@ -18,6 +18,7 @@ const cTenth = (canvas.width / 10);
 
 let index = 0,
    bestScore = 0,
+   // bestScore = retrieveBestScore();  // Retrieve the best score from local storage,
     flight,
     flyHeight,
     currentScore,
@@ -29,6 +30,7 @@ const pipeGap = 270;
 const pipeLoc = () => (Math.random() * ((canvas.height - (pipeGap + pipeWidth)) - pipeWidth)) + pipeWidth;
 
 const setup = () => {
+ // bestScore = retrieveBestScore();
   currentScore = 0;
   flight = jump;
 
@@ -66,6 +68,7 @@ const render = () => {
         flySound.play();
         // check if it's the best score
         bestScore = Math.max(bestScore, currentScore);
+        updateBestScore(bestScore);  // Save new best score if it's higher
         // remove & create new pipe
         pipes = [...pipes.slice(1), [pipes[pipes.length - 1][0] + pipeGap + pipeWidth, pipeLoc()]];
       }
@@ -79,6 +82,7 @@ const render = () => {
         gamePlaying = false;
         hitSound.play();
         setup();
+        checkForHighScore();
       }
     });
   }
@@ -100,6 +104,14 @@ const render = () => {
   document.getElementById('currentScore').innerHTML = `Current : ${currentScore}`;
 
   window.requestAnimationFrame(render);
+}
+
+function updateBestScore(bestScore) {
+  localStorage.setItem('bestScore', bestScore);
+}
+
+function retrieveBestScore() {
+  return parseInt(localStorage.getItem('bestScore') || '0');
 }
 
 setup();
@@ -126,4 +138,38 @@ document.addEventListener('mousedown', (e) => {
    
   }
 });
+/*
+function checkForHighScore() {
+  if (currentScore > bestScore) {
+      document.getElementById('highScoreForm').style.display = 'block';
+  }
+}
+*/
+function updateLeaderboard() {
+  const leaderboard = JSON.parse(localStorage.getItem('leaderboard') || '[]');
+  const leaderboardBody = document.getElementById('leaderboardBody');
+  leaderboardBody.innerHTML = '';
+  leaderboard.forEach(entry => {
+      const row = `<tr>
+          <td>${entry.name}</td>
+          <td>${entry.country}</td>
+          <td>${entry.score}</td>
+      </tr>`;
+      leaderboardBody.innerHTML += row;
+  });
+}
+
+function submitHighScore() {
+  const name = document.getElementById('playerName').value;
+  const country = document.getElementById('playerCountry').value;
+  const score = bestScore;
+  const leaderboard = JSON.parse(localStorage.getItem('leaderboard') || '[]');
+  leaderboard.push({ name, country, score });
+  leaderboard.sort((a, b) => b.score - a.score);
+  localStorage.setItem('leaderboard', JSON.stringify(leaderboard));
+  updateLeaderboard();
+  document.getElementById('highScoreForm').style.display = 'none';
+}
+
+document.addEventListener('DOMContentLoaded', updateLeaderboard);
 
