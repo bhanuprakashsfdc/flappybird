@@ -127,3 +127,14 @@ document.addEventListener('mousedown', (e) => {
   }
 });
 
+// Mobile touch support
+document.addEventListener('touchstart', (e) => {
+  e.preventDefault();  // Prevent default touch behaviors like scrolling and zooming
+  if (!gamePlaying) {
+      gamePlaying = true;
+      setup();
+  }
+  flight = jump;
+  spaceSound.play();
+}, { passive: false });  // Setting passive to false allows us to call preventDefault
+
