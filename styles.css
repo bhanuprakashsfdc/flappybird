@@ -61,3 +61,24 @@ h1 {
 .pratext{
   font-size: 16px;
 }
+
+#leaderboard, #highScoreForm {
+  margin: 20px auto;
+  width: 431px;
+  text-align: center;
+}
+
+#leaderboard table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#leaderboard th, #leaderboard td {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+input[type="text"], button {
+  margin: 10px;
+  padding: 8px;
+}
