@@ -1,12 +1,12 @@
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
 const img = new Image();
-img.src = "assets/img/img.png";
+img.src = "/assets/img/img.png";
 
 // Sound effects
-const flySound = new Audio('assets/audio/sfx_point.wav');
-const hitSound = new Audio('assets/audio/sfx_die.wav');
-const spaceSound = new Audio('assets/audio/sfx_wing.wav');
+const flySound = new Audio('/assets/audio/sfx_point.wav');
+const hitSound = new Audio('/assets/audio/sfx_die.wav');
+const spaceSound = new Audio('/assets/audio/sfx_wing.wav');
 
 // general settings
 let gamePlaying = false;
