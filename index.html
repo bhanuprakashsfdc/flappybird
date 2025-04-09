@@ -3,8 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flappy Bird - Free Online Game</title>
-    <meta name="description" content="Play flappy bird here online for free. Click on the screen, or use your spacebar to get started. Fly the bird as far as you can without hitting a pipe.">
+    <title>Play Flappy Bird Online - Free Classic Arcade Game | No Download</title>
+    <meta name="description" content="Play the original Flappy Bird game online for free! Challenge yourself in this addictive classic arcade game. No download required, works on all devices. Beat high scores now!">
+    <meta name="keywords" content="flappy bird, online game, free game, arcade game, classic game, browser game, no download game">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Play Flappy Bird Online - Free Classic Arcade Game">
+    <meta property="og:description" content="Play the original Flappy Bird game online for free! Challenge yourself in this addictive classic arcade game. No download required, works on all devices.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/assets/img/img.png">
+    <link rel="canonical" href="https://flappybird.io/">
     <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicon/apple-icon-72x72.png">
@@ -27,25 +34,52 @@
 </head>
 <body>
     <div class="site-header">
-        <nav class="nav-menu">
+        <nav class="nav-menu" aria-label="Main navigation">
             <a href="/">Home</a>
             <a href="/blogs.html">Blogs</a>
             <a href="#leaderboard">Leaderboard</a>
             <a href="/pages/about.html">About</a>
             <a href="/pages/contact.html">Contact</a>
         </nav>
-       
     </div>
 
-    <header>
-        <h1>Flappy Bird</h1>
-        <div class="score-container">
-            <div id="bestScore"></div>
-            <div id="currentScore"></div>
-        </div>
-    </header>
+    <main>
+        <canvas id="canvas" width="431" height="650"></canvas>
+        <header>
+            <h1>Play Flappy Bird Online - The Classic Arcade Game</h1>
+            <div class="score-container" aria-live="polite">
+                <div id="bestScore"></div>
+                <div id="currentScore"></div>
+            </div>
+        </header>
 
-    <canvas id="canvas" width="431" height="650"></canvas>
+        <section class="game-description">
+            <h2>Welcome to Flappy Bird - The Addictive Classic Game</h2>
+            <p>Experience the excitement of the original Flappy Bird game, now available to play online for free! Guide your bird through challenging pipes, test your reflexes, and compete for the highest score in this beloved arcade classic.</p>
+            
+            <div class="game-features">
+                <h3>Game Features:</h3>
+                <ul>
+                    <li>Simple one-tap controls - perfect for all ages</li>
+                    <li>Challenging gameplay that keeps you coming back</li>
+                    <li>No download required - play instantly in your browser</li>
+                    <li>Works on all devices - mobile, tablet, and desktop</li>
+                    <li>Global leaderboard to compete with players worldwide</li>
+                    <li>Free to play - no hidden costs or in-app purchases</li>
+                </ul>
+            </div>
+
+            <div class="how-to-play">
+                <h3>How to Play:</h3>
+                <p>Playing Flappy Bird is easy to learn but challenging to master:</p>
+                <ol>
+                    <li>Click your mouse or tap your screen to make the bird fly</li>
+                    <li>Navigate through pipes without touching them</li>
+                    <li>Each pipe you pass adds one point to your score</li>
+                    <li>Try to beat your personal best and climb the leaderboard</li>
+                </ol>
+            </div>
+        </section>   
 
     <footer class="site-footer">
         <div class="footer-content">
@@ -81,6 +115,25 @@
     <script>
         document.getElementById("year").textContent = new Date().getFullYear();
       </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "VideoGame",
+      "name": "Flappy Bird",
+      "description": "Play the original Flappy Bird game online for free! Challenge yourself in this addictive classic arcade game.",
+      "genre": ["Arcade Game", "Casual Game"],
+      "url": "https://flappybird.io",
+      "inLanguage": "en",
+      "playMode": "SinglePlayer",
+      "gamePlatform": ["Web Browser", "Mobile Browser"],
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock"
+      }
+    }
+    </script>
     <script src="/assets/js/script.js"></script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QZT5XF9PYN"></script>
