@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flappy Bird - Free Online Game</title>
-    <meta name="description" content="Play flappy bird here online for free. Click on the screen, or use your spacebar to get started. Fly the bird as far as you can without hitting a pipe.">
+    <title>About - Flappy Bird</title>
+    <meta name="description" content="Learn about Flappy Bird game, its history, features, and how to play this addictive arcade game.">
     <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicon/apple-icon-72x72.png">
@@ -36,17 +36,58 @@
         </nav>
     </div>
 
-    <header>
-        <h1>Flappy Bird</h1>
-        <div class="score-container">
-            <div id="bestScore"></div>
-            <div id="currentScore"></div>
-        </div>
-    </header>
+    <main class="content-wrapper">
+        <section class="about-section">
+            <h1>About Flappy Bird</h1>
+            
+            <article class="game-history">
+                <h2>Game History</h2>
+                <p>Flappy Bird is an arcade-style game that was originally released in 2013. The game quickly became a global phenomenon, known for its simple yet challenging gameplay. Our version brings this classic game to your web browser, allowing you to experience the fun and challenge anytime, anywhere.</p>
+            </article>
 
-    <canvas id="canvas" width="431" height="650"></canvas>
+            <article class="game-features">
+                <h2>Features</h2>
+                <ul>
+                    <li>Simple, one-touch gameplay mechanics</li>
+                    <li>Addictive scoring system</li>
+                    <li>Retro-style graphics</li>
+                    <li>Global leaderboard</li>
+                    <li>Cross-platform compatibility</li>
+                    <li>No download required - play directly in your browser</li>
+                </ul>
+            </article>
 
-    
+            <article class="how-to-play">
+                <h2>How to Play</h2>
+                <div class="instructions">
+                    <h3>Controls</h3>
+                    <ul>
+                        <li>Click your mouse or tap your screen to make the bird flap</li>
+                        <li>Press the spacebar (on desktop) to make the bird flap</li>
+                        <li>Avoid hitting the pipes and the ground</li>
+                    </ul>
+
+                    <h3>Scoring</h3>
+                    <ul>
+                        <li>Earn one point for each pair of pipes you pass through</li>
+                        <li>Try to beat your personal best score</li>
+                        <li>Compare your score with other players on the leaderboard</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="tips-tricks">
+                <h2>Tips & Tricks</h2>
+                <ul>
+                    <li>Maintain a steady rhythm when tapping</li>
+                    <li>Try to keep the bird in the middle of the screen</li>
+                    <li>Don't panic when approaching pipes</li>
+                    <li>Practice makes perfect - don't give up!</li>
+                </ul>
+            </article>
+        </section>
+    </main>
+
     <footer class="site-footer">
         <div class="footer-content">
             <div class="footer-section">
@@ -60,40 +101,28 @@
             <div class="footer-section">
                 <h3>Legal</h3>
                 <ul>
-                    <li><a href="/privacy-policy">Privacy Policy</a></li>
-                    <li><a href="/terms">Terms of Service</a></li>
-                    <li><a href="/cookie-policy">Cookie Policy</a></li>
+                    <li><a href="/pages/privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="/pages/terms.html">Terms of Service</a></li>
+                    <li><a href="/pages/cookie-policy.html">Cookie Policy</a></li>
                 </ul>
             </div>
             <div class="footer-section">
                 <h3>Contact</h3>
                 <ul>
                     <li><a href="mailto:contact@example.com">Email Us</a></li>
-                    <li><a href="/pages/contact.html">Contact</a></li>
+                   <li><a href="/pages/contact.html">Contact</a></li>
                     <li><a href="/pages/about.html">About</a></li>
                 </ul>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; <span id="year"></span> <a href="/">Flappy Bird </a>. All rights reserved.</p>
+            <p>&copy; <span id="year"></span> <a href="/">Flappy Bird</a>. All rights reserved.</p>
         </div>
     </footer>
+
     <script>
         document.getElementById("year").textContent = new Date().getFullYear();
-      </script>
-    <script src="/assets/js/script.js"></script>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QZT5XF9PYN"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-QZT5XF9PYN');
     </script>
-
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2895399230294782"
-     crossorigin="anonymous"></script>
-     <!-- Buy Me a Coffee Widget -->
-    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="bhanuprakash" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="20" data-y_margin="60"></script>
+    <script src="/assets/js/script.js"></script>
 </body>
 </html>
