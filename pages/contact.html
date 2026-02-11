@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Play Flappy Bird Online - Free Classic Arcade Game </title>
-    <meta name="description" content="Play the original Flappy Bird game online for free! Challenge yourself in this addictive classic arcade game. No download required, works on all devices. Beat high scores now!">
+    <title>Contact Us - Flappy Bird</title>
+    <meta name="description" content="Get in touch with the Flappy Bird team. We'd love to hear your feedback, questions, or suggestions about the game.">
     <meta name="keywords" content="flappy bird, online game, free game, arcade game, classic game, browser game, no download game">
     <meta name="robots" content="index, follow">
     <meta property="og:title" content="Play Flappy Bird Online - Free Classic Arcade Game">
@@ -34,7 +34,7 @@
 </head>
 <body>
     <div class="site-header">
-        <nav class="nav-menu" aria-label="Main navigation">
+        <nav class="nav-menu">
             <a href="/">Home</a>
             <a href="/blogs.html">Blogs</a>
             <a href="/app.html">Play Game</a>
@@ -43,48 +43,96 @@
         </nav>
     </div>
 
-    <main>
-        <canvas id="canvas" width="431" height="650"></canvas>
-        <header>
-            <h1>Play Flappy Bird Online - The Classic Arcade Game</h1>
-            <div class="score-container" aria-live="polite">
-                <div id="bestScore"></div>
-                <div id="currentScore"></div>
-            </div>
-        </header>
-
-        <section class="game-description">
-            <h2>Welcome to Flappy Bird - The Addictive Classic Game</h2>
-            <p>Experience the excitement of the original Flappy Bird game, now available to play online for free! Guide your bird through challenging pipes, test your reflexes, and compete for the highest score in this beloved arcade classic.</p>
+    <main class="content-wrapper">
+        <section class="contact-section">
+            <h1>Contact Us</h1>
             
-            <div class="game-features">
-                <h3>Game Features:</h3>
-                <ul>
-                    <li>Simple one-tap controls - perfect for all ages</li>
-                    <li>Challenging gameplay that keeps you coming back</li>
-                    <li>No download required - play instantly in your browser</li>
-                    <li>Works on all devices - mobile, tablet, and desktop</li>
-                    <li>Global leaderboard to compete with players worldwide</li>
-                    <li>Free to play - no hidden costs or in-app purchases</li>
-                </ul>
+            <div class="contact-info">
+                <h2>Get in Touch</h2>
+                <p>We'd love to hear from you! Whether you have questions about the game, want to report a bug, or just want to share your feedback, please don't hesitate to reach out.</p>
             </div>
 
-            <div class="how-to-play">
-                <h3>How to Play:</h3>
-                <p>Playing Flappy Bird is easy to learn but challenging to master:</p>
-                <ol>
-                    <li>Click your mouse or tap your screen to make the bird fly</li>
-                    <li>Navigate through pipes without touching them</li>
-                    <li>Each pipe you pass adds one point to your score</li>
-                    <li>Try to beat your personal best and climb the leaderboard</li>
-                </ol>
+            <div class="contact-methods">
+                <div class="contact-card">
+                    <h3>Support</h3>
+                    <p>For technical issues and game support:</p>
+                    <a href="mailto:support@example.com">support@example.com</a>
+                </div>
+
+                <div class="contact-card">
+                    <h3>Business Inquiries</h3>
+                    <p>For partnerships and business opportunities:</p>
+                    <a href="mailto:business@example.com">business@example.com</a>
+                </div>
+
+                <div class="contact-card">
+                    <h3>Social Media</h3>
+                    <p>Follow us for updates and news:</p>
+                    <div class="social-links">
+                        <a href="https://twitter.com/flappybird" target="_blank">Twitter</a>
+                        <a href="https://facebook.com/flappybird" target="_blank">Facebook</a>
+                        <a href="https://instagram.com/flappybird" target="_blank">Instagram</a>
+                    </div>
+                </div>
             </div>
-        </section>   
+
+            <div class="contact-form-container">
+                <h2>Send Us a Message</h2>
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject:</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select a subject</option>
+                            <option value="support">Technical Support</option>
+                            <option value="feedback">Game Feedback</option>
+                            <option value="bug">Report a Bug</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
+            </div>
+
+            <div class="faq-section">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <h3>How do I report a bug?</h3>
+                        <p>You can report bugs through our contact form above or email us directly at support@example.com with details about the issue.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>What's the typical response time?</h3>
+                        <p>We aim to respond to all inquiries within 24-48 hours during business days.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Can I suggest new features?</h3>
+                        <p>Absolutely! We love hearing new ideas from our community. Use the contact form or email us your suggestions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer class="site-footer">
         <div class="footer-content">
             <div class="footer-section">
-                <h3>Blogs</h3>
+                <h3>About Game</h3>
                 <ul>
                     <li><a href="#how-to-play">How to Play</a></li>
                     <li><a href="#high-scores">High Scores</a></li>
@@ -109,12 +157,21 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; <span id="year"></span> <a href="/">Flappy Bird </a>. All rights reserved. Designed by <a href="https://www.bhanuprakashsfdc.com/">Bhanu Prakash </a></p>
+            <p>&copy; <span id="year"></span> <a href="/">Flappy Bird</a>. All rights reserved.</p>
         </div>
     </footer>
+
     <script>
         document.getElementById("year").textContent = new Date().getFullYear();
-      </script>
+
+        // Handle form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Add your form submission logic here
+            alert('Thank you for your message! We will get back to you soon.');
+            this.reset();
+        });
+    </script>
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
